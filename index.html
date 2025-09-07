@@ -1,43 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Quote Generator</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Quote Generator</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Dynamic Quote Generator</h1>
-        
-        <!-- Category Selection -->
-        <div class="category-section">
-            <label for="categorySelect">Select Category:</label>
-            <select id="categorySelect">
-                <option value="all">All Categories</option>
-            </select>
-            <button id="addCategoryBtn">+ Add Category</button>
-        </div>
+  <h1>Dynamic Quote Generator</h1>
 
-        <!-- Quote Display -->
-        <div id="quoteDisplay" class="quote-display">
-            <p class="quote-text">Click the button to see a quote!</p>
-            <p class="quote-category"></p>
-        </div>
-        
-        <button id="newQuote" class="btn">Show New Quote</button>
+  <!-- Area to display the quote -->
+  <div id="quoteDisplay"></div>
 
-        <!-- Add Quote Form -->
-        <div class="add-quote-form">
-            <h3>Add New Quote</h3>
-            <div>
-                <input id="newQuoteText" type="text" placeholder="Enter a new quote" />
-                <input id="newQuoteCategory" type="text" placeholder="Enter quote category" />
-                <button id="addQuoteBtn" class="btn">Add Quote</button>
-            </div>
-        </div>
-    </div>
+  <!-- Button to generate new quote -->
+  <button id="newQuote">Show New Quote</button>
 
-    <script src="script.js"></script>
+  <!-- Form to add new quotes -->
+  <div>
+    <input id="newQuoteText" type="text" placeholder="Enter a new quote" />
+    <input id="newQuoteCategory" type="text" placeholder="Enter quote category" />
+    <button id="addQuoteBtn">Add Quote</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
